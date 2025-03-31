@@ -26,6 +26,7 @@ body{
 }
 .tile:hover{
     background-color:   #607d8b;
+    box-shadow: 5px 5px 5px #6600FF;
 }
 
 #childcont{

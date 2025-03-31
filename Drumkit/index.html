@@ -8,24 +8,31 @@
 </head>
 <body>
     <div id="container">
-        <div class="tile kick"></div>
-        <div class="tile snare"></div>
-        <div class="tile hitopen"></div>
-        <div class="tile hitclose"></div>
-        <div class="tile crash"></div>
-        <div class="tile ride"></div>
-        <div class="tile tom"></div>
-        <div class="tile cowbell"></div>
-        <div class="tile clap"></div>
+        <div class="tile kick"><audio src="./audio/NOISE_SNARE_21.wav"></audio></div>
+        <div class="tile snare"><audio src="./audio/CLOAK_BD_20.wav"></audio></div>
+        <div class="tile hitopen"><audio src="./audio/CLOAK_BD_19.wav"></audio></div>
+        <div class="tile hitclose"><audio src="./audio/CLOAK_BD_22.wav"></audio></div>
+        <div class="tile crash"><audio src="./audio/DIXIE_METAL_01.wav"></audio></div>
+        <div class="tile ride"><audio src="./audio/DIXIE_METAL_02.wav"></audio></div>
+        <div class="tile tom"><audio src="./audio/DIXIE_METAL_03.wav"></audio></div>
+        <div class="tile cowbell"><audio src="./audio/DIXIE_METAL_04.wav"></audio></div>
+        <div class="tile clap"><audio src="./audio/STO_BD_26.wav"></audio></div>
     </div>
     
     <div id="childcont">
-        <div class="tile 808snare" ></div>
-        <div class="tile 808kick"></div>
-        <div class="tile percussions"></div>
-        <div class="tile synthdrums"></div>
-        <div class="tile tambourine"></div>
-        <div class="tile claves"></div>
+        <div class="tile 808snare" ><audio src="./audio/fat-punchy-kick-dark-shot_F_minor.wav"></audio></div>
+        <div class="tile 808kick"><audio src="./audio/r-b-snare_G_major.wav"></audio></div>
+        <div class="tile percussions"><audio src="./audio/STO_BD_10.wav"></audio></div>
+        <div class="tile synthdrums"><audio src="./audio/STO_BD_11.wav"></audio></div>
+        <div class="tile tambourine"><audio src="./audio/STO_BD_13.wav"></audio></div>
+        <div class="tile claves"><audio src="./audio/STO_BD_14.wav"></audio></div>
+    </div>
+
+    <div class="track">
+        <fieldset>
+            <label for="track">Track</label>
+            <input type="range">
+        </fieldset>
     </div>
     <script src="./src/index.js"></script>
 </body>
