@@ -73,11 +73,20 @@ main{
     object-fit: cover;
 }
 
-#pop-up{
+#pop-up {
+    display: none;
+    z-index: 1000; /* Ensure it’s above everything */
     border: 2px solid;
     border-radius: 10px;
-    padding: 5px;
+    padding: 20px;
+    background-color: #fff3e0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .cont{
     height: auto;
     min-height: 300px;
@@ -89,25 +98,23 @@ main{
     align-items: center;
     justify-content: center;
     gap: 15px;
-    color: var(--text-color);
 }
 .close{
-    background-color: var(--card-bg);
+    background-color:    #d0ece7;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+    font-size: 25px;
     float: right;
-    padding: 0 5px;
+    padding: 0 10px;
     margin: 10px;
-    color: var(--text-color);
 }
 .start{
     padding: 5px;
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
-    color: var(--text-color);
-    background-color: var(--card-bg);
+    background-color: #d0ece7;
 }
 
 /* content */

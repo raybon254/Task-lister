@@ -1,0 +1,103 @@
+{
+    "quizes": {
+        "crypto": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "math": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "general": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "history": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "science": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "tech": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "sports": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "entertainment": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ],
+        "music": [
+            {
+                "quiz": {
+                    "question": ""
+                },
+                "option": ["", "", "", ""],
+                "answer": {
+                    "correct": ""
+                }
+            }
+        ]
+    }
+}

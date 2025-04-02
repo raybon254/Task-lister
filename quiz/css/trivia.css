@@ -1,0 +1,59 @@
+/* main */
+.triviaSection{
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas:
+        "upper upper"
+        "middle middle"
+        "below below"
+    ;
+    gap: 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #708486;
+}
+.upper, .middle, .below{
+    border: 2px solid;
+}
+
+/* upper */
+.flash{
+    font-size: 30px;
+}
+.timer{
+    padding: 5px;
+    font-weight: bold;
+}
+.upper{
+    grid-area: upper;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* middle */
+.middle{
+    grid-area: middle;
+    padding: 5px;
+    margin: 5px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* below */
+.below{
+    grid-area: below;
+    padding: 5px;
+    margin: 5px;
+}
+.next{
+    font-weight: bold;
+    padding: 5px;
+    float: right;
+}
