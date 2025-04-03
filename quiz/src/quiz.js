@@ -28,12 +28,11 @@ function tiles(){
         tile.addEventListener('click', ()=>{
             
             const choiceData = tile.dataset.type
-            const pop = document.querySelector('#pop-up');
-
-            //enable pop up in relation to choice made
-            const choice = document.querySelector('.choice')      
+            
+            //enable pop up in relation to choice made 
+            localStorage.setItem("selectedQuiz", choiceData);    
             modal(choiceData)
-            trivia(choiceData)
+            // trivia(choiceData)
             
         })
     })
@@ -57,45 +56,3 @@ function modal(choiceData){
     })
 }
 
-function trivia(choice){
-    const quizes = "http://localhost:3000/quizes";
-    //retrive data
-    fetch(quizes)
-    .then((res => res.json()))
-    .then((data => {
-
-        const currentTile = data[choice]; //accessing topic choices
-        let quiz = [] 
-        // access current tile array
-        currentTile.forEach(quizData => {
-            // console.log(quizData.quiz)
-            // console.log(quizData.option)
-            // console.log(quizData.answer)
-
-            // store in quiz array loop through indexes,foward through event nextbtn
-                   
-            quiz.push(quizData.quiz) 
-                       
-            })
-            foward(quiz)
-        }))
-    .catch((err => console.log('Error fetching data:', err)))
- 
-}
-
-function display(quiz,index){
-    const question = document.querySelector('.questions');
-    if(quiz.length > 0){
-        question.textContent = quiz[index]
-    }
-}
-//next button event
-function foward(quiz){
-    let index = 0
-    const next = document.querySelector('.next')
-    next.onclick = () => {
-        index = (index + 1)
-        if(index < quiz.length)
-        display(quiz,index)
-}
-}

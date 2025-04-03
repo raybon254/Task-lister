@@ -45,7 +45,10 @@
     align-items: center;
     justify-content: center;
 }
-
+.ans{
+    display: flex;
+    flex-direction: column;
+}
 /* below */
 .below{
     grid-area: below;
