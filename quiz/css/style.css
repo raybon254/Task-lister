@@ -38,6 +38,19 @@ header{
     grid-area: header;
     padding: 10px;
     margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+nav, #nav{
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+}
+#nav:hover{
+    background-color:  #8d8b84 ;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* aside */

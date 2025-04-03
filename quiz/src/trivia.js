@@ -66,5 +66,32 @@ function foward(quiz,option){
         index = (index + 1)
         if(index < quiz.length)
         display(quiz,index,option)
+        timer(quiz, index, option)
 }
+}
+
+// timelapse per question
+function timer(quiz, index, option) {
+    let time = 10;
+    const timerDisplay = document.querySelector('.timer');
+   
+    
+    const countdown = setInterval(() => {
+        time--;
+        if (timerDisplay) {
+            timerDisplay.style.display = 'block'
+            timerDisplay.textContent = `Time remaining:  ${time}`;
+        }
+        
+        if (time < 1) {
+            clearInterval(countdown); // ❗ pass countdown here to stop the interval
+
+            // Move to next question
+            index = (index + 1); // loop back if needed
+            display(quiz, index, option);
+
+            // Start timer again for next question
+            timer(quiz, index, option);
+        }
+    }, 1000);
 }
